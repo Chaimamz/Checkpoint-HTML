@@ -1,0 +1,46 @@
+#start {
+  color: blue;
+  font: bolder;
+}
+#name {
+    color: aqua;
+}
+#gender{
+    color: aqua;
+}
+#birthday{
+    color: aqua;
+}
+#q1{
+    color: blueviolet;
+    text-align: center;
+}
+#quiz{
+    text-align: center;
+}
+.q1{
+    color: blueviolet;
+}
+.aboutme{
+    border: 5px solid lightcoral ;
+    color: black;
+}
+.contact {
+    color: midnightblue;
+}
+h1+p{
+    color: brown;
+} 
+.box-1 {
+    border:3px solid red;
+    color: black;
+    font-size: larger;
+    font: bolder;
+    
+  }
+#hello{
+    font-weight: 900;
+}
+#results{
+     font-size: medium;
+}

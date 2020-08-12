@@ -4,7 +4,7 @@
         <title>
             Analyse your personality ? 
         </title>
-
+     <link rel="stylesheet" href="./style/style.css">
     </head>
     <body>
       <header>
@@ -16,48 +16,53 @@
   <a href="#aboutme">About me</a>
 </div>
 <div id="welcome">
-  <h1>Welcome everyone </h1>
-  <h1 style="text-align:center;">Hey I'm Chaima</h1>
+  <h1 style="font: bolder;">Welcome everyone</h1>
+  <h1 style="text-align:center;color: red;">Hey I'm Chaima</h1>
   <p style="text-align:center;"> If you want to discover your personality through some questions.JOIN US!</p>
-  <p> Through our questions and quizes,you can discover your personality and your caracter and maybe you'll know something strange about yourself.And at the end ,there is a surprise!!!   </p>
-  <h2 style="text-align: center;">LET'S START</h2>
+  <p style="text-align: center;">Through our questions and quizes,you can discover your personality and your caracter and maybe you'll know something strange about yourself.And at the end ,there is a surprise!!!</p>
+</div>
+<div id="start">
+  <h2 style="text-align: center;font: bolder;">LET'S START</h2>
 </div>
 </header>
 <main>
-<form id="Aboutyou">
-
-    <label>Name:</label>
+<form id="Aboutyou" style="text-align: center;">
+    <label id="name">Name:</label>
     <input type="text" name="first name" placeholder="Type your name here" />
     <br />
-    <label> Gender:</label>
+    <label id="gender"> Gender:</label>
     <input type="text" name="gender" placeholder="Male or Female" />
     <br />
 
-    <label>Birth Date:</label>
+    <label id="birthday">Birth Date:</label>
     <input type="date" name="birthday" placeholder="Ex:9 octobre 2012" />
     <br />
 
     <input type="submit" value="Submit" />
   </form>
-  <img src="res/quiz.jpg" alt="quiz" width="300">
-  <div id="Quiz">
-<h1>Question 1:</h1>
-  <p>Choose between those colors:</p>
-  <p>Blue
+  <img style="text-align: center;" src="res/quiz.jpg" alt="quiz" width="300">
+  <div id="Quiz" style="text-align: center;">
+<h1 class="q1">Question 1:</h1>
+  <p style="text-align: center;">Choose between those colors:</p>
+  <ul>
+  <li style="text-align: center;">Blue</li>
   <img src="res/blue.jpg" alt="blue" width="100">
-  </p> Green
+  <li>Green</li>
   <img src="res/green.jpg" alt="green" width="90" height="60">
-  <p> Red
+  <li>Red</li>
     <img src="res/red.jpg" alt="red" width="100" height="60">
-  <p> Yellow
+  <li>Yellow</li>
     <img src="res/yellow.png" alt="Yellow" width="100" height="60">
-  <h1>Question n2:</h1>
+  </ul>
+  <h1 class="q1">Question n2:</h1>
   <p>Choose between those foods</p>
-  <p>Pasta
+  <ul>
+  <li>Pasta</li>
     <img src="res/pasta.jpg" alt="Pasta" width="100" height="60">
-  <p> Pizza
+  <li>Pizza</li>
     <img src="res/pizza.jpg" alt="Pizza" width="100" height="60">
-  <h1>Question n3:</h1>
+  </ul>
+  <h1 class="q1">Question n3:</h1>
   <p> Choose between:</p>
   <ul>
     <li>Going to a party</li>
@@ -65,7 +70,7 @@
     <li>Going to the beach</li>
     <img src="res/beach.jpg" alt="Beach"width="100" height="60">
   </ul>
-  <h1>Question n4:</h1>
+  <h1 class="q1">Question n4:</h1>
   <p>Choose between:</p>
   <ul>
     <li>Drinking Soda</li>
@@ -73,7 +78,7 @@
     <li>Drinking Jus</li>
     <img src="res/jus.jpg" alt="Jus"width="100" height="60">
     </ul>
-  <h1>Question n5:</h1>
+  <h1 class="q1">Question n5:</h1>
   <p>Choose between:</p>
   <ul>
     <li>Family</li>
@@ -81,7 +86,7 @@
     <li>Friends</li>
     <img src="res/friends.jpg" alt="Friends"width="100" height="60">
     </ul>
-<h1>Question n6:</h1>
+<h1 class="q1">Question n6:</h1>
 <p>Choose between:</p>
 <ul>
   <li>Throwing your pet </li>
@@ -89,7 +94,7 @@
     <li>Throwing your IPhone 11 pro</li>
     <img src="res/iphone.jpg" alt="IPhone"width="100" height="60">
     </ul>
-<h1>Question n7:</h1>
+<h1 class="q1">Question n7:</h1>
 <p>Choose between:</p>
 <ul>
   <li>Flying</li>
@@ -97,7 +102,7 @@
   <li>Reading minds</li>
   <img src="res/minds.jpg" alt="Reading minds"width="100" height="60">
   </ul>
-<h1>Question n8:</h1>
+<h1 class="q1">Question n8:</h1>
 <p>Choose between:</p>
 <ul>
   <li>Being strong </li>
@@ -105,7 +110,7 @@
   <li>Being smart </li>
   <img src="res/smart.jpg" alt="Smart"width="100" height="60">
   </ul>
-<h1>Question n9:</h1>
+<h1 class="q1">Question n9:</h1>
 <p>Choose between:</p>
 <ul>
   <li>Going to the future </li>
@@ -113,7 +118,7 @@
   <li>Returning to the past </li>
   <img src="res/past.jpg" alt="Past"width="100" height="60">
 </ul>
-<h1>Question n10:</h1>
+<h1 class="q1">Question n10:</h1>
 <p>Choose between</p>
   <ul>
     <li>Living without cars </li>
@@ -121,33 +126,48 @@
     <li>Living without Planes </li>
     <img src="res/plane.jpg" alt="Planes"width="100" height="60">
 </ul>
-</div>
-</main>
-<footer>
-<div id="contact">
-  <h1 style="text-align:center;">Contact us:</h1>
+<a href="#results">RESULTS</a>
+</div> 
+</main> 
+<footer> 
+<div id="contact" style="text-align: center;">
+  <h1 style="text-align:center;" class="contact">Contact us:</h1>
   <h2>Facebook</h2> <a href="https://www.facebook.com/chaima.mzid"><img src="res/FB.jpg"></a>
   <h2>Instagram</h2> <a href="https://www.instagram.com/mzidchaima/"><img src="res/insta.jpg"></a>
 </div>
 <div id="aboutme">
   <h1 style="text-align: center;"> About me:</h1>
-  <p>Hey,I am chaima and I'm 16 years old and This is my first little website . Hope you like it!!</p>
+  <p class="aboutme" style="text-align: center;" >Hey,I am chaima and I'm 16 years old and This is my first little website . Hope you like it!!</p>
 </div>
-  <p>C.M</p>
-</footer>
-
-
-
-
-
-  
-  
-
-
-
-
-     
-
+  <h1 style="text-align: center;">C.M</h1>
+<p class="box-1">Disclaimer:It's just a game .Don't be mad if you don't like the result.</p>
+<div id="results">
+    <h2 style="color: mediumorchid;">Month1:January</h2>
+    <p>Your are a talkative person and you want to disover new things .You're kind-hearted but serious in some cases.You want always to attend parties and to have fun with your friends.SURPRISE:Your personality looks like Kate Middleton's personality</p>
+    <h2 style="color: mediumorchid;">Month2: February</h2>
+    <p>You are an artistic person and you have a love for innovation and creation .Loyality defines your every relationship but you are quite attuned to silence.Is it good or bad?What do you think?SURPRISE:Your personality looks like Harry Styles's personality. </p>
+    <h2 style="color: mediumorchid;">Month3:March</h2>
+    <p>You are a generous and a sympathetic person and you are always willing to sacrifice and to help others.But,if someone betrayed you,it's difficult to get back your trust.SURPRISE:Your personality looks like Justin Bieber's personality </p>
+    <h2 style="color: mediumorchid;">Month4:April</h2> 
+    <p>You are so brave and courageous.You have a strong attitude.You have a huge passion for food,science and books.You are a good friend and a romantic partner.But you are sometimes impatient.SUPRISE:Your personality looks like Emma Watson's personality</p>
+    <h2 style="color: mediumorchid;">Month5:May</h2>
+    <p>You are so attractive and pleasing.You are also independent and you have an intelligent mind.But somtimes,you become very stubborn and hard to deal with and in additon you love attention.SURPRISE: Your personality looks like Adele's personality </p>
+    <h2 style="color: mediumorchid;">Month6:June</h2>
+    <p>You are easily influenced by kindness.You are intelligent and inquisitive and you want always to be the best.But you get always worried at any simple thing and very moody.SURPRISE:Your personality looks like Ariana Grande's personality </p>
+    <h2 style="color: mediumorchid;">Month7:July:</h2>
+    <p>You are a friendly and an approachable person .You love having fun and you treat others equally.Sometimes you are very emotional and easily hurt.SURPRISE:Your personality looks like Selena Gomez's personality</p>
+    <h2 style="color: mediumorchid;">Month8:August</h2>
+    <p>You are an outgoing person and very confident.You are also very organised and you usually tend to be a good leader.But somtimes you prefer solitude.SURPRISE:Your personality looks like Kylie Jenner's personality </p>
+    <h2 style="color: mediumorchid;">Month9:September</h2>
+    <p>You are a very loyal person and you have a "methodical approach" to life.But you are always shy and you get easily bored.You are also a perfectionist person and you are very open-minded.SURPRISE:Your personality looks like Beyoncé's personality</p>
+    <h2 style="color: mediumorchid;">Month10:October</h2>
+    <p>You are motivated by justice and you want to create harmony and joy. You are also gentle,diplomatic and charming.But,you are emotional .You love travelling and discovering new things.SURPRISE:Your personality looks like Eminem's personality.</p>
+    <h2 style="color: mediumorchid;">Month11:November</h2>
+    <p>You are a generous soul with a sense of humor.You are also hard-working and calm.But,you are pften misunderstood and this is a negative point.Otherwise,you are good-looking and honorable.SURPRISE:Your personality looks like David Gettaa's personality.</p>
+    <h2 style="color: mediumorchid;">Month12:December</h2>
+    <p>You are a wise person and you have a love for reading and gaining knowledge.But you are often pessimistic and depressed HAHAHA.You are also honest and funny.SURPRISE: Your personality looks like Taylor Swift's personality.</p>
+  </div>
+  </footer>
     </body>
 </html>
  
